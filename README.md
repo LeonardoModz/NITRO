@@ -4,5 +4,5 @@
 
 # CMD 
 pip3 install -r requirements.txt
-git clobe https://github.com/LeonardoModz/NITRO python3 mainmpy
+git clone https://github.com/LeonardoModz/NITRO python3 main.py
 
