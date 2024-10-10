@@ -90,18 +90,18 @@ class SapphireGen:
 if __name__ == "__main__":
     while True:
         code_type = input(
-            f"{Fore.LIGHTMAGENTA_EX}[{strftime('%H:%M', localtime())}] Tipo de código (boost, clássico): "
+            f"{Fore.LIGHTMAGENTA_EX}[{strftime('%H:%M', localtime())}] Code Type (boost, classic): "
         )
         prox = input(
             f"{Fore.LIGHTMAGENTA_EX}[{strftime('%H:%M', localtime())}] Proxies (True, False): "
-        )Tipo de código (boost, clássico): "
+        )
         if prox == "True":
             scrape_proxy = input(
-                f"{Fore.LIGHTMAGENTA_EX}[{strftime('%H:%M', localtime())}] Proxies de raspagem (Verdadeiro, Falso): "
+                f"{Fore.LIGHTMAGENTA_EX}[{strftime('%H:%M', localtime())}] Scrape proxies (True, False): "
             )
         else:
             scrape_proxy = False
         codes = input(
-            f"{Fore.LIGHTMAGENTA_EX}[{strftime('%H:%M', localtime())}]  Número de códigos: "
+            f"{Fore.LIGHTMAGENTA_EX}[{strftime('%H:%M', localtime())}] Number of codes: "
         )
         SapphireGen(code_type, prox, codes).generate(scrape=scrape_proxy)
